@@ -71,6 +71,7 @@ const tarjetasProductos = productos.map((p, i) => `
       <span class="image-index">0${i + 1}</span>
       <span class="image-zoom">VER IMAGEN ↗</span>
     </button>
+    <p class="illustrative-caption">Imagen ilustrativa</p>
     <div class="product-body">
       <span class="micro-label">RODADOS ÁLVARO / ${String(i + 1).padStart(2, '0')}</span>
       <h3>${p.nombre}</h3>
@@ -124,6 +125,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <span class="frame-corner corner-br"></span>
             <img class="hero-logo" src="/images/logo.jpg" alt="Logo oficial de Rodados Álvaro">
           </div>
+          <div class="hero-phones" aria-label="Teléfonos de Rodados Álvaro">
+            <a href="tel:43040744"><span>☎</span> 4304-0744</a>
+            <a href="tel:1159070744"><span>☎</span> 11-5907-0744</a>
+          </div>
         </div>
 
         <div class="hero-copy">
@@ -131,6 +136,19 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <h1>PASIÓN Y POTENCIA<br>SOBRE <em>DOS RUEDAS.</em></h1>
           <h2>Todo para tu moto en un solo lugar</h2>
           <p>En el mundo del motociclismo, cada kilómetro cuenta y cada detalle importa. Sabemos que tu moto no es solo un medio de transporte; es tu compañera de ruta, tu herramienta de trabajo o tu máxima expresión de libertad. Por eso, hemos creado un espacio pensado exclusivamente para quienes llevan el motor en la sangre.</p>
+          <!-- RODADOS_ALVARO_MERCADOLIBRE_V1: BOTON INICIAL -->
+          <div class="ml-button-wrap">
+            <a class="mercadolibre-button" href="https://listado.mercadolibre.com.ar/alvaro-rodados" target="_blank" rel="noopener noreferrer" aria-label="Comprar los productos de Rodados Álvaro en Mercado Libre">
+              <svg class="ml-handshake" viewBox="0 0 64 42" aria-hidden="true">
+                <ellipse cx="32" cy="21" rx="29" ry="18" fill="#fff" stroke="#2D3277" stroke-width="2.5"/>
+                <path d="M12 18l8-6 8 1 5 5-5 5-5-3-5 5-6-7zm40 0l-8-6-8 1-5 5 5 5 5-3 5 5 6-7z" fill="#2D3277"/>
+                <path d="M23 18l7 7 4-3 5 4 4-4-8-8-6 1-6 3z" fill="#fff" stroke="#2D3277" stroke-width="1.7" stroke-linejoin="round"/>
+                <path d="M27 23l5 5m2-3l4 4m1-7l3 3" fill="none" stroke="#2D3277" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>COMPRAR LOS PRODUCTOS EN <strong>MERCADOLIBRE</strong></span>
+              <span class="ml-button-arrow">↗</span>
+            </a>
+          </div>
           <div class="hero-actions">
             <a class="button button-primary" href="#repuestos">EXPLORAR REPUESTOS <span>↗</span></a>
             <a class="button button-secondary" href="${wa}?text=${encodeURIComponent('Hola Rodados Álvaro, quiero hacer una consulta.')}" target="_blank" rel="noopener">CONSULTAR POR WHATSAPP</a>
@@ -195,7 +213,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <section class="parts-catalog" id="catalogo">
           <div class="parts-catalog-heading">
             <span class="micro-label">GUÍA DE COMPONENTES / RODADOS ÁLVARO</span>
-            <img class="catalog-pistons-image" src="/images/pistones.jpg" alt="Pistones y componentes del motor" loading="lazy">
+            <figure class="catalog-illustrative-figure">
+              <img class="catalog-pistons-image" src="/images/pistones.jpg" alt="Pistones y componentes del motor" loading="lazy">
+              <figcaption class="illustrative-caption">Imagen ilustrativa</figcaption>
+            </figure>
     <h3>ENCONTRÁ EL REPUESTO<br>QUE <em>NECESITA TU MOTO.</em></h3>
             <p>Consultá por marca, modelo, cilindrada y año. Nuestro equipo puede orientarte sobre la pieza compatible y su disponibilidad.</p>
           </div>
@@ -208,6 +229,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div><h4>TRANSMISIÓN Y EMBRAGUE</h4><p>Cadenas, coronas, piñones, kits de transmisión, correas, poleas, discos y campanas de embrague, separadores, resortes, cubos, cables, selectores y componentes de caja de cambios.</p></div>
             <a href="${wa}?text=Hola%2C%20consulto%20por%20transmisi%C3%B3n%20o%20embrague%20para%20mi%20moto." target="_blank" rel="noopener">CONSULTAR ↗</a>
           </article>
+          <div class="parts-whatsapp-pair">
+            <span>¿Necesitás alguno de estos repuestos?</span>
+            <a href="${wa}?text=${encodeURIComponent('Hola, consulto por repuestos para mi moto. ¿Me pueden asesorar?')}" target="_blank" rel="noopener">
+              <span class="pair-wa-icon">◉</span>
+              <span>WhatsApp 11-5907-0744</span>
+              <b>CONSULTAR ↗</b>
+            </a>
+          </div>
           <article class="parts-row">
             <div><h4>FRENOS</h4><p>Pastillas, zapatas, discos, campanas, cálipers, bombas, manijas, depósitos, mangueras, líquido de frenos, sensores ABS, interruptores y kits de reparación.</p></div>
             <a href="${wa}?text=Hola%2C%20consulto%20por%20repuestos%20de%20freno%20para%20mi%20moto." target="_blank" rel="noopener">CONSULTAR ↗</a>
@@ -216,6 +245,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div><h4>SUSPENSIÓN, DIRECCIÓN Y RUEDAS</h4><p>Barrales, retenes de horquilla, resortes, amortiguadores, bieletas, rodamientos de dirección, tijas, manubrios, llantas, aros, rayos, cubiertas, cámaras, válvulas, rulemanes y ejes.</p></div>
             <a href="${wa}?text=Hola%2C%20consulto%20por%20suspensi%C3%B3n%2C%20direcci%C3%B3n%20o%20ruedas%20para%20mi%20moto." target="_blank" rel="noopener">CONSULTAR ↗</a>
           </article>
+          <div class="parts-whatsapp-pair">
+            <span>¿Necesitás alguno de estos repuestos?</span>
+            <a href="${wa}?text=${encodeURIComponent('Hola, consulto por repuestos para mi moto. ¿Me pueden asesorar?')}" target="_blank" rel="noopener">
+              <span class="pair-wa-icon">◉</span>
+              <span>WhatsApp 11-5907-0744</span>
+              <b>CONSULTAR ↗</b>
+            </a>
+          </div>
           <article class="parts-row">
             <div><h4>ELECTRICIDAD Y ENCENDIDO</h4><p>Baterías, bujías, bobinas, CDI, ECU, reguladores, estatores, alternadores, motores de arranque, relés, fusibles, cableado, conectores, sensores, tableros, ópticas, faros, guiños y luces traseras.</p></div>
             <a href="${wa}?text=Hola%2C%20consulto%20por%20repuestos%20el%C3%A9ctricos%20para%20mi%20moto." target="_blank" rel="noopener">CONSULTAR ↗</a>
@@ -224,6 +261,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div><h4>CARBURACIÓN, INYECCIÓN Y COMBUSTIBLE</h4><p>Carburadores, chicleres, flotantes, agujas, kits de reparación, filtros de aire y combustible, cuerpos de aceleración, inyectores, bombas, reguladores de presión, mangueras, tanques y tapas.</p></div>
             <a href="${wa}?text=Hola%2C%20consulto%20por%20carburaci%C3%B3n%20o%20inyecci%C3%B3n%20para%20mi%20moto." target="_blank" rel="noopener">CONSULTAR ↗</a>
           </article>
+          <div class="parts-whatsapp-pair">
+            <span>¿Necesitás alguno de estos repuestos?</span>
+            <a href="${wa}?text=${encodeURIComponent('Hola, consulto por repuestos para mi moto. ¿Me pueden asesorar?')}" target="_blank" rel="noopener">
+              <span class="pair-wa-icon">◉</span>
+              <span>WhatsApp 11-5907-0744</span>
+              <b>CONSULTAR ↗</b>
+            </a>
+          </div>
           <article class="parts-row">
             <div><h4>ESCAPE Y ADMISIÓN</h4><p>Escapes, silenciadores, colectores, juntas, soportes, catalizadores, toberas, cajas de filtro, conductos de aire, abrazaderas y protectores térmicos.</p></div>
             <a href="${wa}?text=Hola%2C%20consulto%20por%20escape%20o%20admisi%C3%B3n%20para%20mi%20moto." target="_blank" rel="noopener">CONSULTAR ↗</a>
@@ -232,6 +277,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div><h4>CARROCERÍA Y ESTRUCTURA</h4><p>Guardabarros, carenados, cachas, tapas laterales, colines, piezas de tanque, asientos, soportes, parrillas, caballetes, patas laterales, tornillería, grampas y piezas de chasis.</p></div>
             <a href="${wa}?text=Hola%2C%20consulto%20por%20carrocer%C3%ADa%20o%20estructura%20para%20mi%20moto." target="_blank" rel="noopener">CONSULTAR ↗</a>
           </article>
+          <div class="parts-whatsapp-pair">
+            <span>¿Necesitás alguno de estos repuestos?</span>
+            <a href="${wa}?text=${encodeURIComponent('Hola, consulto por repuestos para mi moto. ¿Me pueden asesorar?')}" target="_blank" rel="noopener">
+              <span class="pair-wa-icon">◉</span>
+              <span>WhatsApp 11-5907-0744</span>
+              <b>CONSULTAR ↗</b>
+            </a>
+          </div>
           <article class="parts-row">
             <div><h4>COMANDOS Y CONTROLES</h4><p>Manijas de freno y embrague, puños, aceleradores, cables, espejos, manubrios, pedalines, pedales de cambio y freno, comandos de luces, bocinas, trabas y cerraduras.</p></div>
             <a href="${wa}?text=Hola%2C%20consulto%20por%20comandos%20y%20controles%20para%20mi%20moto." target="_blank" rel="noopener">CONSULTAR ↗</a>
@@ -240,6 +293,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div><h4>ACEITES, FILTROS Y MANTENIMIENTO</h4><p>Aceites de motor, lubricantes de cadena, refrigerantes, líquido de frenos, filtros de aceite, aire y combustible, grasas, limpiadores, aditivos y productos de mantenimiento.</p></div>
             <a href="${wa}?text=Hola%2C%20consulto%20por%20aceites%2C%20filtros%20y%20mantenimiento." target="_blank" rel="noopener">CONSULTAR ↗</a>
           </article>
+          <div class="parts-whatsapp-pair">
+            <span>¿Necesitás alguno de estos repuestos?</span>
+            <a href="${wa}?text=${encodeURIComponent('Hola, consulto por repuestos para mi moto. ¿Me pueden asesorar?')}" target="_blank" rel="noopener">
+              <span class="pair-wa-icon">◉</span>
+              <span>WhatsApp 11-5907-0744</span>
+              <b>CONSULTAR ↗</b>
+            </a>
+          </div>
           <article class="parts-row">
             <div><h4>ACCESORIOS Y EQUIPAMIENTO</h4><p>Cascos, guantes, camperas, botas, baúles, alforjas, soportes para celular, cargadores USB, alarmas, trabadiscos, cadenas antirrobo, parabrisas, defensas, sliders y protectores.</p></div>
             <a href="${wa}?text=Hola%2C%20consulto%20por%20accesorios%20y%20equipamiento%20para%20mi%20moto." target="_blank" rel="noopener">CONSULTAR ↗</a>
@@ -248,6 +309,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div><h4>TORNILLERÍA Y CONSUMIBLES</h4><p>Tornillos, tuercas, arandelas, bulones, pasadores, chavetas, abrazaderas, precintos, juntas tóricas, retenes, resortes, clips, terminales eléctricos y kits de fijación.</p></div>
             <a href="${wa}?text=Hola%2C%20consulto%20por%20torniller%C3%ADa%20o%20consumibles%20para%20mi%20moto." target="_blank" rel="noopener">CONSULTAR ↗</a>
           </article>
+          <div class="parts-whatsapp-pair">
+            <span>¿Necesitás alguno de estos repuestos?</span>
+            <a href="${wa}?text=${encodeURIComponent('Hola, consulto por repuestos para mi moto. ¿Me pueden asesorar?')}" target="_blank" rel="noopener">
+              <span class="pair-wa-icon">◉</span>
+              <span>WhatsApp 11-5907-0744</span>
+              <b>CONSULTAR ↗</b>
+            </a>
+          </div>
           <p class="parts-catalog-note">La compatibilidad y disponibilidad se confirman según marca, modelo, año y versión de la motocicleta.</p>
         </section>
 
@@ -353,6 +422,43 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <div class="footer-tagline"><strong>RODADOS <em>ÁLVARO</em></strong><span>REPUESTOS · ACCESORIOS · TALLER</span></div>
       <a class="footer-facebook" href="https://www.facebook.com/rodadosalvaro/" target="_blank" rel="noopener">FACEBOOK ↗</a>
       <a href="#inicio" class="footer-up">VOLVER ARRIBA ↑</a>
+      <section class="payment-methods" aria-label="Medios de pago">
+        <div class="payment-heading">
+          <span class="micro-label">PAGÁ COMO TE QUEDE MÁS CÓMODO</span>
+          <h3>ACEPTAMOS <em>TODOS LOS MEDIOS DE PAGO</em></h3>
+          <p>Consultanos por las opciones disponibles al momento de tu compra.</p>
+        </div>
+        <div class="payment-logos">
+          <div class="payment-logo payment-mp"><span class="mp-symbol">MP</span><strong>mercado pago</strong></div>
+          <span class="payment-logo payment-visa">VISA</span>
+          <span class="payment-logo payment-master"><i></i><i></i><b>mastercard</b></span>
+          <span class="payment-logo payment-transfer"><span>↔</span><b>TRANSFERENCIA</b></span>
+          <span class="payment-logo payment-cash"><span>$</span><b>EFECTIVO</b></span>
+        </div>
+        <div class="payment-alias">
+          <div class="alias-copy">
+            <span>ALIAS MERCADO PAGO</span>
+            <strong>A.RSRL</strong>
+            <small>Titular: Rodados Álvaro S.R.L.</small>
+          </div>
+          <button class="copy-alias-btn" type="button" data-copy-alias="A.RSRL">COPIAR ALIAS ▣</button>
+          <p class="copy-alias-status" aria-live="polite"></p>
+        </div>
+      </section>
+      <!-- RODADOS_ALVARO_MERCADOLIBRE_V1: BOTON FINAL -->
+          <!-- RODADOS_ALVARO_MERCADOLIBRE_V1: BOTON INICIAL -->
+          <div class="ml-button-wrap">
+            <a class="mercadolibre-button" href="https://listado.mercadolibre.com.ar/alvaro-rodados" target="_blank" rel="noopener noreferrer" aria-label="Comprar los productos de Rodados Álvaro en Mercado Libre">
+              <svg class="ml-handshake" viewBox="0 0 64 42" aria-hidden="true">
+                <ellipse cx="32" cy="21" rx="29" ry="18" fill="#fff" stroke="#2D3277" stroke-width="2.5"/>
+                <path d="M12 18l8-6 8 1 5 5-5 5-5-3-5 5-6-7zm40 0l-8-6-8 1-5 5 5 5 5-3 5 5 6-7z" fill="#2D3277"/>
+                <path d="M23 18l7 7 4-3 5 4 4-4-8-8-6 1-6 3z" fill="#fff" stroke="#2D3277" stroke-width="1.7" stroke-linejoin="round"/>
+                <path d="M27 23l5 5m2-3l4 4m1-7l3 3" fill="none" stroke="#2D3277" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>COMPRAR LOS PRODUCTOS EN <strong>MERCADOLIBRE</strong></span>
+              <span class="ml-button-arrow">↗</span>
+            </a>
+          </div>
       <div class="footer-bottom"><span>© ${new Date().getFullYear()} RODADOS ÁLVARO</span><span>AV. ENTRE RÍOS 1224 · CABA</span><span>PASIÓN POR LAS MOTOS.</span></div>
     </footer>
   </div>

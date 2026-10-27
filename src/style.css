@@ -1434,3 +1434,293 @@ body::after {
   background: #171717;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
 }
+
+/* LEYENDA DISCRETA PARA FOTOGRAFÍAS */
+.illustrative-caption {
+  display: block;
+  margin: 6px 0 0;
+  color: #a7a0a4;
+  font: 400 10px 'Rajdhani', sans-serif;
+  letter-spacing: .5px;
+  text-align: center;
+}
+.catalog-illustrative-figure {
+  width: 100%;
+  margin: 0 auto 18px;
+  text-align: center;
+}
+.catalog-illustrative-figure .catalog-pistons-image {
+  margin-bottom: 0;
+}
+.product-image {
+  position: relative;
+}
+.product-card > .illustrative-caption {
+  margin: 6px 12px 0;
+  color: #a7a0a4;
+  font: 400 10px 'Rajdhani', sans-serif;
+  letter-spacing: .5px;
+  text-align: center;
+}
+
+/* CONSULTA WHATSAPP CADA DOS CATEGORÍAS */
+.parts-whatsapp-pair {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 20px;
+  padding: 17px 20px;
+  border: 1px solid rgba(255,45,67,.4);
+  border-radius: 14px;
+  background: linear-gradient(115deg,#211318,#111114);
+}
+.parts-whatsapp-pair > span { color:#e8e1e4; font:600 14px 'Rajdhani',sans-serif; }
+.parts-whatsapp-pair a {
+  display:inline-flex; align-items:center; justify-content:center; gap:9px;
+  padding:11px 15px; border-radius:9px; background:#168c51; color:#fff;
+  text-decoration:none; font:700 12px 'Rajdhani',sans-serif;
+}
+.parts-whatsapp-pair a:hover { background:#20a761; }
+.pair-wa-icon { font-size:18px; }
+
+/* MEDIOS DE PAGO */
+.payment-methods {
+  grid-column:1/-1; margin:24px 0 8px; padding:26px;
+  border:1px solid rgba(255,255,255,.12); border-radius:18px;
+  background:linear-gradient(135deg,#1b171a,#101012);
+}
+.payment-heading { text-align:center; }
+.payment-heading h3 { margin:9px 0; color:#f8f5f6; font:700 clamp(20px,3vw,29px) 'Oxanium',sans-serif; }
+.payment-heading h3 em { color:var(--red); font-style:normal; }
+.payment-heading p { color:#aaa3a7; font-size:13px; }
+.payment-logos { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:12px; margin:23px 0; }
+.payment-logo { display:inline-flex; align-items:center; justify-content:center; gap:7px; min-height:42px; padding:8px 13px; border:1px solid rgba(255,255,255,.13); border-radius:9px; background:#f8f8f8; color:#17233b; font:13px Arial,sans-serif; }
+.payment-mp { color:#183b67; }
+.mp-symbol { display:inline-flex; align-items:center; justify-content:center; width:29px; height:29px; border:3px solid #009ee3; border-radius:50%; color:#009ee3; font-weight:900; font-size:10px; }
+.payment-visa { color:#1434cb; font-size:20px; font-style:italic; font-weight:900; }
+.payment-master { position:relative; padding-left:12px; }
+.payment-master i { display:block; width:21px; height:21px; border-radius:50%; background:#eb001b; }
+.payment-master i+i { margin-left:-15px; background:#f79e1b; }
+.payment-master b,.payment-transfer b,.payment-cash b { font-size:10px; }
+.payment-transfer span,.payment-cash span { font-size:22px; font-weight:800; }
+.payment-alias { display:flex; align-items:center; justify-content:space-between; gap:18px; max-width:650px; margin:0 auto; padding:18px 20px; border:1px solid rgba(0,158,227,.35); border-radius:12px; background:rgba(0,158,227,.07); }
+.alias-copy { display:flex; flex-direction:column; gap:5px; }
+.alias-copy>span { color:#9faebc; font:700 10px 'Rajdhani',sans-serif; letter-spacing:1.4px; }
+.alias-copy>strong { color:#fff; font:700 25px 'Oxanium',sans-serif; }
+.alias-copy small { color:#bdb7bb; font-size:12px; }
+.copy-alias-btn { flex-shrink:0; padding:12px 15px; border:0; border-radius:8px; background:#009ee3; color:#fff; font:700 11px 'Rajdhani',sans-serif; cursor:pointer; }
+.copy-alias-status { flex-basis:100%; margin:0; color:#8bd9ff; font-size:12px; }
+@media(max-width:600px) {
+  .parts-whatsapp-pair { align-items:flex-start; flex-direction:column; padding:15px; }
+  .parts-whatsapp-pair a { width:100%; box-sizing:border-box; flex-wrap:wrap; }
+  .payment-methods { padding:19px 13px; }
+  .payment-logos { gap:8px; }
+  .payment-logo { padding:7px 9px; min-height:36px; }
+  .payment-alias { flex-wrap:wrap; padding:15px; }
+  .copy-alias-btn { width:100%; }
+}
+
+
+/* RODADOS_ALVARO_MERCADOLIBRE_V1: IDENTIDAD VISUAL Y BOTONES */
+.hero-phones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 22px;
+  width: 100%;
+  padding: 13px 8px 3px;
+}
+.hero-phones a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #f5f2f3;
+  font: 700 16px 'Rajdhani', sans-serif;
+  letter-spacing: .6px;
+  text-decoration: none;
+}
+.hero-phones a span {
+  color: var(--red);
+  font-size: 18px;
+}
+.hero-phones a:hover {
+  color: var(--red);
+}
+.ml-button-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 25px 0;
+}
+.mercadolibre-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  width: min(100%, 490px);
+  min-height: 68px;
+  padding: 12px 20px;
+  border: 2px solid #f0c400;
+  border-radius: 13px;
+  background: #ffe600;
+  color: #242424;
+  box-shadow: 0 7px 0 rgba(180, 139, 0, .22), 0 0 22px rgba(255, 230, 0, .13);
+  font: 800 13px 'Rajdhani', sans-serif;
+  letter-spacing: .55px;
+  line-height: 1.35;
+  text-align: left;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.mercadolibre-button:hover {
+  transform: translateY(-2px);
+  background: #ffed33;
+  box-shadow: 0 9px 0 rgba(180, 139, 0, .18), 0 0 28px rgba(255, 230, 0, .2);
+}
+.ml-handshake {
+  flex: 0 0 52px;
+  width: 52px;
+  height: 36px;
+}
+.mercadolibre-button strong {
+  font-weight: 900;
+}
+.ml-button-arrow {
+  margin-left: auto;
+  font-size: 21px;
+}
+.footer .ml-button-wrap {
+  grid-column: 1 / -1;
+  margin: 20px 0 26px;
+}
+@media (max-width: 600px) {
+  .hero-phones {
+    gap: 8px 15px;
+    padding-top: 12px;
+  }
+  .hero-phones a {
+    font-size: 15px;
+  }
+  .mercadolibre-button {
+    gap: 10px;
+    min-height: 62px;
+    padding: 11px 13px;
+    font-size: 12px;
+  }
+  .ml-handshake {
+    flex-basis: 44px;
+    width: 44px;
+    height: 32px;
+  }
+}
+
+
+/* RODADOS_ALVARO_LOGO_FULL_WIDTH_V2: LOGO A PANTALLA COMPLETA Y TELEFONOS DEBAJO */
+.hero .hero-logo-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  padding: 10px 0 0;
+  gap: 0;
+}
+
+.hero .logo-frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: #08080a;
+  box-shadow: none;
+}
+
+.hero .logo-frame::before,
+.hero .logo-frame::after {
+  display: none;
+}
+
+.hero .hero-logo {
+  display: block;
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  opacity: 1;
+  filter: none;
+  mix-blend-mode: normal;
+}
+
+.hero .hero-phones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 26px;
+  width: 100%;
+  padding: 17px 12px 20px;
+  margin: 0;
+  background: #0b0b0d;
+  border-bottom: 1px solid rgba(238,41,63,.45);
+  text-align: center;
+}
+
+.hero .hero-phones a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #f5f2f3;
+  font: 700 18px 'Rajdhani', sans-serif;
+  letter-spacing: .7px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hero .hero-phones a span {
+  color: var(--red);
+  font-size: 20px;
+}
+
+.hero .hero-phones a:hover {
+  color: var(--red);
+}
+
+@media (max-width: 650px) {
+  .hero .hero-logo-panel {
+    padding-top: 6px;
+  }
+
+  .hero .hero-logo {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    height: auto;
+  }
+
+  .hero .hero-phones {
+    gap: 8px 18px;
+    padding: 14px 8px 17px;
+  }
+
+  .hero .hero-phones a {
+    font-size: 16px;
+  }
+}
