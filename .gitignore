@@ -1,0 +1,12 @@
+node_modules/
+dist/
+android/
+.androidide/
+.androidide-capacitor.json
+*.backup
+*.respaldo
+*.antes-*
+*.bak-*
+src/counter.ts
+src/typescript.svg
+public/vite.svg
